@@ -38,7 +38,7 @@ function start() { // Inicio da função start()
     /*Disparo*/
     var podeAtirar = true;
 
-    //Verifica se o usuário pressionou alguma tecla	
+    //Verifica se o usuário pressionou alguma tecla
 
     $(document).keydown(function (e) {
         jogo.pressionou[e.which] = true;
@@ -122,8 +122,9 @@ function start() { // Inicio da função start()
     } //Fim da função moveinimigo1()
 
     function moveinimigo2() {
+        let velVeiculo = velocidade-2;
         posicaoX = parseInt($("#inimigo2").css("left"));
-        $("#inimigo2").css("left", posicaoX - 3);
+        $("#inimigo2").css("left", posicaoX - velVeiculo);
 
         if (posicaoX <= 0) {
 
@@ -220,6 +221,7 @@ function start() { // Inicio da função start()
         // Disparo com o inimigo1
         if (colisao3.length > 0) {
 
+            velocidade=velocidade+0.3;
             pontos = pontos + 100;
             inimigo1X = parseInt($("#inimigo1").css("left"));
             inimigo1Y = parseInt($("#inimigo1").css("top"));
