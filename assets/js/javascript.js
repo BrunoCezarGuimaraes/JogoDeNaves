@@ -19,7 +19,6 @@ function start() { // Inicio da função start()
     salvos = 0;
     perdidos = 0;
 
-    /*Pontos/
     energiaAtual = 3;
 
     /*Movimentação do inimigo*/
