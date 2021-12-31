@@ -21,3 +21,6 @@ No canto superior mostra barras de energia, que perde uma por colisão contra o 
 
 ## nota
 A maior dificuldade que tive nesse projeto foi um estranho bug nas variáveis globais, onde ao pôr, var, as variáveis acabavam não sendo lidas, por isso retirei para o funcionamento do jogo.
+
+## Link
+https://gameofwarproject.netlify.app/
