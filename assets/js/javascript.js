@@ -19,8 +19,8 @@ function start() { // Inicio da função start()
     var salvos = 0;
     var perdidos = 0;
 
-    /*Pontos*/
-    var energiaAtual = 3;
+    /*Pontos - Nota: ao por var acontece um bug que não permite ler o valor dentro da variavel*/
+    energiaAtual = 3;
 
     /*Movimentação do inimigo*/
     var velocidade = 5;
